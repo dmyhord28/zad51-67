@@ -1,0 +1,222 @@
+
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hordiienko Z24_html</title>
+    <style>
+
+        #H1{
+            font-weight: bold;
+            font-size: 30px;
+        }
+        #odp{   
+            color: rgb(0, 238, 255);
+            font-family: Arial;
+            font-size: large;
+            font-weight: normal;
+        }
+    </style>
+
+</head>
+<body>
+    <h1>   
+        <ol type="1">
+            <!-- 1. -->
+            <li>
+                <p id="H1">Jakie standardowo dostępne są czcionki w systemie Windows</p>
+                <ul type="square">
+     <li><p id="odp">Times New Roman (szeryfowa)</p></li>
+      <li><p id="odp">Arial (bezszeryfowa)</p></li>
+         <li><p id="odp">Courier New (monotypiczna)</p></li>
+                </ul>
+            </li>
+            
+            <!-- 2. -->
+            <li>
+                <p id="H1">Jakich czcionek dodatkowo dostarcza Internet Explorerem</p>
+                <ul type="circle">
+        <li><p id="odp">Verdana</p></li>
+          <li><p id="odp">Tahoma</p></li>
+         <li><p id="odp">'Trebuchet MS'</p></li>
+           <li><p id="odp">Georgia</p></li>
+                </ul>
+            </li>
+            
+            <!-- 3. -->
+            <li>
+                <p id="H1">Wymień rodziny ogólne</p>
+                <ul type="disc">
+        <li><p id="odp"><u>serif</u> - czcionka szeryfowa (końcówki znaków posiadają "ozdobniki"), np.: 'Times New Roman', Georgia, Garamond, Bodoni</p></li>
+            <li><p id="odp"><u>sans-serif</u> - czcionka bezszeryfowa (końcówki znaków są proste), np.: Arial, Verdana, Helvetica, Univers, Futura</p></li>
+           <li><p id="odp"><u>monospace</u> - czcionka o stałej szerokości znaków - monotypiczna (wygląda jak pisana na maszynie), np.: Courier, 'Courier New'</p></li>
+          <li><p id="odp"><u>cursive</u> - czcionka mająca pewne cechy pochyłej (wygląda jak pisana ręcznie)</p></li>
+          <li><p id="odp"><u>fantasy</u> - czcionka fantazyjna (dekoracyjna)</p></li>
+                </ul>
+            </li>
+            
+            <!-- 4. -->
+            <li>
+                <p id="H1">Kiedy stosujemy rodziny czcionek, w jaki sposób wpisujemy</p>
+                <ul type="square">
+                    <li><p id="odp">Rodziny ogólne wykorzystuje się jako ostatnią alternatywę - jeśli użytkownik nie będzie posiadał żadnej czcionki, której nazwę wpisaliśmy wprost.</p></li>
+      <li><p id="odp">Dlatego zwykle rodzinę ogólną podaje się na samym końcu listy nazw czcionek.</p></li>
+        <li><p id="odp"><strong>Sposób wpisywania (deklaracja):</strong></p></li>
+       <li><p id="odp">selektor { font-family: nazwa_czcionki1, nazwa_czcionki2, rodzina_ogólna; }</p></li>
+        <li><p id="odp"><strong>Przykład:</strong> body { font-family: Arial, Helvetica, Verdana, sans-serif; }</p></li>
+          <li><p id="odp">Taki sposób jest zalecany, gdyż wtedy nawet jeśli użytkownik nie będzie posiadał żadnej z podanych czcionek, strona zostanie wyświetlona przy użyciu czcionki podobnej do zdefiniowanych.</p></li>
+                </ul>
+            </li>
+            
+            <!-- 5. -->
+            <li>
+                <p id="H1">Rodzaje wyrównanie tekstu</p>
+                <ul type="circle">
+       <li><p id="odp"><strong>left</strong> - wyrównanie tekstu do lewego marginesu (domyślnie)</p></li>
+          <li><p id="odp"><strong>right</strong> - wyrównanie tekstu do prawego marginesu</p></li>
+          <li><p id="odp"><strong>center</strong> - wyśrodkowanie tekstu</p></li>
+         <li><p id="odp"><strong>justify</strong> - wyrównanie do obu marginesów jednocześnie (justowanie)</p></li>
+                </ul>
+                <p id="odp">Składnia reguły: selektor {text-align: wyrównanie;}</p>
+            </li>
+            
+            <!-- 6. -->
+            <li>
+                <p id="H1">Kolor tekstu</p>
+                <ul type="disc">
+                    <li><p id="odp">Składnia reguły: <strong>selektor {color: kolor;}</strong></p></li>
+                    <li><p id="odp">Wyraz selektor ma zastosowanie do wszystkich elementów.</p></li>
+                    <li><p id="odp">Jako kolor można podać: nazwę koloru HTML (np. red, blue), wartość szesnastkową (np. #FF0000), lub wartość RGB (np. rgb(255,0,0))</p></li>
+                </ul>
+                <p id="odp">Przykłady: p { color: red; } &nbsp;&nbsp; p { color: #FF0000; } &nbsp;&nbsp; p { color: rgb(255,0,0); }</p>
+            </li>
+            
+            <!-- 7. -->
+            <li>
+                <p id="H1">Dekoracja tekstu</p>
+                <ul type="square">
+                    <li><p id="odp">Składnia reguły: <strong>selektor {text-decoration: dekoracja;}</strong></p></li>
+                    <li><p id="odp">Wyraz selektor ma zastosowanie do wszystkich elementów.</p></li>
+                    <li><p id="odp">Rodzaje dekoracji:</p>
+             <ul type="circle">
+           <li><p id="odp">a) <strong>none</strong> - bez zmian, tekst bez podkreśleń, przekreśleń itp.</p></li>
+            <li><p id="odp">b) <strong>underline</strong> - podkreślenie tekstu</p></li>
+           <li><p id="odp">c) <strong>line-through</strong> - przekreślenie tekstu</p></li>
+            <li><p id="odp">d) <strong>overline</strong> - nadkreślenie tekstu</p></li>
+          <li><p id="odp">e) <strong>blink</strong> - migotanie tekstu (tylko Netspace/Mozilla/Opera)</p></li>
+                </ul>
+             </li>
+            </ul>
+            </li>
+            
+            <!-- 8. -->
+            <li>
+        <p id="H1">Warianty czcionek</p>
+           <ul type="circle">
+                    <li><p id="odp">Składnia reguły: <strong>selektor {font-variant: wariant;}</strong></p></li>
+              <li><p id="odp">Rodzaje wariantów:</p>
+     <ul type="disc">
+               <li><p id="odp"><strong>normal</strong> - czcionka normalna (podstawowa)</p></li>
+                   <li><p id="odp"><strong>small-caps</strong> - kapitaliki (tekst napisany wielkimi literami, lecz czcionką o wielkości małych liter)</p></li>
+                        </ul>
+                    </li>
+                </ul>
+                <p id="odp">Przykład: p { font-variant: small-caps; }</p>
+            </li>
+            
+            <!-- 9. -->
+            <li>
+                <p id="H1">Pogrubienie czcionek</p>
+            <ul type="square">
+         <li><p id="odp">Składnia reguły: <strong>selektor {font-weight: grubosc;}</strong></p></li>
+        <li><p id="odp">Rodzaje grubości czcionek (9 rodzajów):</p>
+            <ul type="circle">
+             <li><p id="odp">normal - czcionka normalna (podstawowa)</p></li>
+        <li><p id="odp">bold - czcionka pogrubiona</p></li>
+        <li><p id="odp">bolder - grubsza niż bold</p></li>
+           <li><p id="odp">lighter - cieńsza niż normal</p></li>
+              <li><p id="odp">100, 200, 300, 400 (odpowiednik "normal"), 500, 600, 700 (odpowiednik "bold"), 800, 900 - wartości numeryczne określające wagę czcionki</p></li>
+                </ul>
+           </li>
+           </ul>
+            <p id="odp">Przykład: p { font-weight: bold; } lub p { font-weight: 700; }</p>
+            </li>
+            
+            <!-- 10. -->
+
+            <li>
+                <p id="H1">Rozmiar czcionek (wyliczenia, jednostki miar)</p>
+                <ul type="disc">
+                    <li><p id="odp">Składnia reguły: <strong>selektor {font-size: rozmiar;}</strong></p></li>
+                    <li><p id="odp">Wartości słowne (od najmniejszej do największej):</p>
+                        <ul type="circle">
+               <li><p id="odp">xx-small - najmniejsza</p></li>
+               <li><p id="odp">x-small - mniejsza</p></li>
+                 <li><p id="odp">small - mała</p></li>
+                 <li><p id="odp">medium - średnia</p></li>
+                 <li><p id="odp">large - duża</p></li>
+             <li><p id="odp">x-large - większa</p></li>
+                <li><p id="odp">xx-large - największa</p></li>
+                  <li><p id="odp">larger - większy od rozmiaru dziedziczonego</p></li>
+                  <li><p id="odp">smaller - mniejszy od rozmiaru dziedziczonego</p></li>
+                        </ul>
+                    </li>
+                    <li><p id="odp">Jednostki miary:</p>
+                        <ul type="square">
+               <li><p id="odp">pt (punkt) - 1 punkt = 1/72 cala</p></li>
+              <li><p id="odp">px (piksel) - 1px = 1/96 cala</p></li>
+            <li><p id="odp">cm (centymetr)</p></li>
+                <li><p id="odp">mm (milimetr)</p></li>
+             <li><p id="odp">in (cal) - 1 cal = 2.54 cm</p></li>
+                <li><p id="odp">em - względna do rozmiaru czcionki bieżącego elementu</p></li>
+                <li><p id="odp">ex - względna do wysokości litery 'x'</p></li>
+             <li><p id="odp">% - procent wielkości nadrzędnej</p></li>
+                 </ul>
+                </li>
+                </ul>
+                <p id="odp">Przykłady: p { font-size: 20px; } &nbsp;&nbsp; p { font-size: 12pt; } &nbsp;&nbsp; p { font-size: 1.5em; }</p>
+            </li>
+            
+            <!-- 11. -->
+            <li>
+                <p id="H1">Odstęp między wierszami (line-height)</p>
+                <ul type="square">
+                    <li><p id="odp">Składnia: selektor {line-height: odstęp;}</p></li>
+                 <li><p id="odp">Jednostki: px, pt, em, ex, cm, mm, %, "normal"</p></li>
+                </ul>
+            </li>
+            
+            <!-- 12. -->
+            <li>
+                <p id="H1">Odstęp między wyrazami (word-spacing)</p>
+                <ul type="circle">
+                 <li><p id="odp">Składnia: selektor {word-spacing: odstęp;}</p></li>
+                    <li><p id="odp">Jednostki: px, pt, em, ex, cm, mm, "normal"</p></li>
+                </ul>
+            </li>
+            
+            <!-- 13. -->
+            <li>
+            <p id="H1">Odstęp między literami (letter-spacing)</p>
+             <ul type="disc">
+            <li><p id="odp">Składnia: selektor {letter-spacing: odstęp;}</p></li>
+              <li><p id="odp">Jednostki: px, pt, em, ex, cm, mm, "normal"</p></li>
+            </ul>
+        </li>
+            
+            <!-- 14. -->
+        <li>
+               <p id="H1">Łączenie właściwości czcionek i tekstu</p>
+             <ul type="square">
+            <li><p id="odp">Składnia: selektor {font: wartości atrybutów;}</p></li>
+                <li><p id="odp">Kolejność: font-style, font-variant, font-weight, font-size/line-height, font-family</p></li>
+                    <li><p id="odp">Przykład: p { font: italic small-caps bold 12pt/1.5 Arial, sans-serif; }</p></li>
+            </ul>
+        </li>
+    </ol>
+    </h1>
+
+</body>
+</html>
+<!--  Hordiienko Z24_html  -->

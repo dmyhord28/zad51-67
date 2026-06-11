@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hordiienko Z56_html</title>
+    <style>
+        h1{
+            text-decoration: italic;
+            font-family: Arial, sans-serif;  
+        }
+    </style>
+</head>
+<body>
+    
+    <ol>
+        <li>
+            <h1>składnia teoretyczna definiowania klasy --> obramowania </h1>
+            <p>Składnia teoretyczna:</p>
+            <table border="1">
+                <tr><td>selektor.klasa { cecha: wartość }</td></tr>
+            </table>
+        </li>
+
+        <li>
+            <h1>Podaj opis dla Klasa "cecha" oraz "wartość"</h1>
+            <p>Klasa to wartość atrybutu "class" nadanego selektorowi z poziomu języka 
+                HTML. "cecha" oraz "wartość" określają atrybuty elementu nadane poprzez 
+                style</p>
+        </li>
+
+        <li>
+            <h1>Jaki znacznik może być selektorem? Trzy przykłady selektorów dla klas </h1>
+            <p>Selektorem może być dowolny znacznik, np.<br>
+                p -- akapit, <br>
+                h1 -- tytuł, <br>
+                td -- komórka tabeli i inne.</p>
+        </li>
+
+        <li>
+            <h1>Jakie jest zastosowanie klas?</h1>
+            <p> <br>
+            Deklaracja klasy jest przydatna szczególnie, jeśli na wielu stronach serwisu znajdują się <br>
+            elementy mające takie samo formatowanie, a dodatkowo nie można dla nich posłużyć się <br>
+            selektorem typu, ponieważ na stronie znajdują się inne znaczniki tego samego rodzaju co <br>
+            wybrany element, ale nie chcemy, aby i one otrzymały takie samo formatowanie.</p>
+        </li>
+
+        <li>
+            <h1>Kiedy ma zastosowanie lista klas?</h1>
+            <p> <br>
+            Jeśli chcemy do pojedynczego elementu przypisać kilka różnych klas, należy posłużyć się <br>
+            poleceniem:</p>
+        </li>
+
+        <li>
+            <h1>składnia teoretyczna listy klasy --> obramowania, oraz uwagi</h1>
+
+            <table border="2">
+                <tr><td>< selektor class="klasa1 klasa2 klasa3...">...< /selektor></td></tr>
+            </table>
+            <p>Uwagi:</p>
+            <ul type="disc">
+                <li>przy czym klasy: klasa1, klasa2, klasa3 muszą być zdeklarowane w wewnętrznym, <br>
+                    zewnętrznym lub importowanym arkuszu stylów.</li>
+                <li>Kolejność wpisywania nazw klas w wartości atrybutu "class" nie ma znaczenia na <br>
+                    ostateczny sposób formatowania elementu. Jeżeli kilka przypisanych klas odnosi się <br>
+                    do tej samej własności, o wyniku decyduje zasada kaskadowości.</li>
+            </ul>
+        </li>
+
+        <li>
+            <h1>Czym są podzbiory klas. Składnia teoretyczna listy klasy --> obramowania</h1>
+            <p>  <br>
+            Istnieje możliwość określenia tzw. podzbioru klas, czyli podania, jakie klasy musi mieć <br>
+            jednocześnie przypisane element, aby wybrana reguła CSS miała do niego zastosowanie. Na <br>
+            przykład po wpisaniu:</p>
+            <table border="1">
+                <tr><td>selektor.klasa1.klasa3 { cecha: wartość }</td></tr>
+            </table>
+            <p>zmieniony zostanie sposób formatowania elementu:</p>
+            <table border="1">
+                <tr><td>< selektor class="klasa1 klasa2 klasa3">...< /selektor></td></tr>
+            </table>
+
+            <p>Kolejność podawania klas - zarówno w regule CSS, jak i w wartości atrybutu "class" - nie <br>
+            ma znaczenia.</p>
+        </li>
+
+        <li>
+            <h1>Co jest sygnałem (przesłanką), że należy zastosować klasy?</h1>
+            <p>Jeśli jakiś element, o specyficznym rodzaju formatowania, wstępuje przynajmniej raz <br>
+            na niektórych stronach Twojego serwisu (może to być np. główny tytuł strony), jest to <br>
+            znak, że dobrze byłoby umieścić w zewnętrznym arkuszu stylów deklarację jego <br>
+            klasy. Dzięki temu, jeśli później zdecydujemy się zmienić jego formatowanie, nie <br>           
+            będziemy musieli modyfikować każdej ze stron, a jedynie zewnętrzny arkusz.</p>
+        </li>
+
+        <li>
+            <h1>Kiedy i z jakiego powodu powinny być planowane klasy dla wykonywanej strony?</h1>
+            <p>Już na początkowym etapie projektowania serwisu, dobrze jest dokładnie obmyślić, <br>
+            jakie klasy mogą okazać się użyteczne. Im więcej deklaracji klas - odnoszących się do <br>
+            powtarzalnych elementów - umieścisz w zewnętrznym arkuszu stylów, tym szybciej <br>
+            przebiegnie późniejsza ewentualna modyfikacja stron!</p>
+        </li>
+
+        <li>
+            <h1>Jaki jest cel stosowania komentarzy podczas definiowania klas?</h1>
+            <p>Dobrym pomysłem jest również wstawianie komentarza przed każdą deklaracją klasy <br>
+            w arkuszu (znaki: /* ... */), w którym opisuje się jej przeznaczenie. Po jakimś czasie w <br>
+            Twoim arkuszu stylów może znaleźć się tyle klas, że zapomnisz, do jakich elementów <br>
+            się one odnosiły. Wtedy właśnie bardzo przydatny może się okazać wpisany wcześniej <br>
+            komentarz.</p>
+        </li>
+        
+    </ol>
+
+</body>
+</html>
+<!-- Hordiienko Dmytro -->

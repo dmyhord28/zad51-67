@@ -1,0 +1,37 @@
+div#pierwszy_hordiienko{
+    margin: 0 auto;
+    background-color: lightblue;
+    width: 724pt;
+    border: 5px;
+    border-radius: 13mm;
+    border-color: navy;
+    border-style: solid;
+    align: center;
+}
+p{
+    font-size: 10pt;
+}
+p:first-child{
+    font-size: 9mm;
+    font-style: italic;
+}
+
+div#drugi_hordiienko{
+    margin: 0 auto;
+    background-color: pink;
+    width: 924pt;
+    border: 3px;
+    border-radius: 17mm;
+    border-color: black;
+    border-style: solid;
+}
+
+div#trzeci_hordiienko{
+    background-color: lightgreen;
+    width: 1124pt;
+    border: 7px;
+    border-radius: 18mm;
+    border-color: purple;
+    border-style: solid;
+}
+/* Hordiienko Z65_css */

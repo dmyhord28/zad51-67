@@ -1,0 +1,38 @@
+p::first-letter{
+        font-size: 121pt;
+        color: red;
+    }
+
+    #ak1::first-letter{
+        color:red
+    }
+
+#ak1{
+    font-size: 21pt;
+    color: rgb(224, 224, 0);
+}
+#ak2::first-letter{
+    color: gold;
+
+}
+#ak2{
+    font-size: 21pt; 
+    color: rgb(224, 224, 0);
+}
+
+h1::first-letter{
+    color:silver;
+    font-size: 130pt;
+}
+h1{
+    color: rgb(49, 0, 128);
+}
+
+#ak3::first-line{
+    color: red;
+}
+#ak3{
+    color: rgb(224, 224, 0);
+    font-size: 20pt;
+}
+/* Hordiienko Z67_CSS */
